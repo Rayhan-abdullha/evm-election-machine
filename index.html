@@ -7,50 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="evm-app">
+    <div id="select">
+        <h2 id="sl">Your Vhot is Confirm</h2>
+    </div>
+    <div id="evm-app">
         <header>
             <div class="machine-name">
                 <h1>Evm Machine</h1>
             </div>
         </header>
         <main>
-            <div class="machin-body">
+            <div id="machin-body">
                 <div class="single-input">
                     <input class="input-first" id="name1" type="text" value="Morshed Mia">
-                    <button id="selectBtn">Ok</button>
+                    <button onclick="add('name1')" id="selectBtn">Ok</button>
                 </div>
                 <div class="single-input">
                     <input type="text" id="name2" value="Others">
-                    <button id="selectBtn">Ok</button>
+                    <button onclick="add('name2')" id="selectBtn">Ok</button>
                 </div>
                 <div class="single-input">
                     <input type="text" id="name3" value="BNP">
-                    <button id="selectBtn">Ok</button>
+                    <button onclick="add('name3')" id="selectBtn">Ok</button>
                 </div>
                 <div class="single-input">
                     <input type="text" id="name4" value="Sopon Chaowdhury">
-                    <button id="selectBtn">Ok</button>
+                    <button onclick="add('name4')" id="selectBtn">Ok</button>
                 </div>
                 <div class="single-input">
                     <input type="text" id="name5" value="Naju Pondit">
-                    <button id="selectBtn">Ok</button>
+                    <button onclick="add('name5')" id="selectBtn">Ok</button>
                 </div>
                 <div class="single-input">
                     <input type="text" id="name6" value="Arju Apa">
-                    <button id="selectBtn">Ok</button>
+                    <button onclick="add('name6')" id="selectBtn">Ok</button>
                 </div>
                 <div class="single-input">
                     <input type="text" id="name7" value="Chosma">
-                    <button id="selectBtn">Ok</button>
+                    <button onclick="add('name7')" id="selectBtn">Ok</button>
                 </div>
                 <div class="single-input">
                     <input class="input-last" id="name8" type="text" value="Forida Parvin">
-                    <button id="selectBtn">Ok</button>
+                    <button onclick="add('name8')" id="selectBtn">Ok</button>
                 </div>
             </div>
             <section class="submit-btn">
-                <button class="btn-green" type="submit">CONFIRM</button>
-                <button class="btn-red">CANCEL</button>
+                <button id="green" class="btn-green" type="submit">CONFIRM</button>
+                <button onclick="cancel('name1','name2','name3','name4','name5','name6','name7','name8')" id="red" class="btn-red">CANCEL</button>
             </section>
         </main>
     </div>
