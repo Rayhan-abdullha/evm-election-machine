@@ -99,3 +99,9 @@ button {
         margin-bottom: 5px
     }
 }
+
+@media screen and (max-width: 630px) {
+    input {
+        width: 50%;
+    }
+}

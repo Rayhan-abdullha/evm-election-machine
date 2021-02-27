@@ -1,8 +1,8 @@
 function add() {
     const searchDiv = document.getElementById('selectBtn').value;
-    console.log(searchDiv)
+    const
 }
 
 document.getElementById('selectBtn').addEventListener('click', function() {
-   add()
+   
 })
