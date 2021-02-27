@@ -1,6 +1,11 @@
 function add(name) {
-    const searchDiv = document.getElementById(name);
+    const searchDiv = document.getElementById(name)
     searchDiv.style.backgroundColor = 'green';
+    const selected = document.getElementById('select')
+    const h3 = document.createElement('h3')
+    h3.innerHTML = document.getElementById(name).value
+    selected.appendChild(h3)
+
 }
 function cancel(name1,name2,name3,name4,name5,name6,name7,name8){
     const div1 = document.getElementById(name1)
@@ -26,4 +31,6 @@ document.getElementById('green').addEventListener('click',function(){
     div.style.display = 'block'
     const div1 = document.getElementById('evm-app')
     div1.style.display = 'none'
+    const select = document.getElementById('select');
+    select.style.display = 'block'
 })
